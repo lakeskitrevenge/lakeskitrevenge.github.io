@@ -9,7 +9,7 @@ function clickCounter() {
     } else {
       localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    document.getElementById("result").innerHTML = "You have purchased air " + localStorage.clickcount + " time(s).";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
@@ -25,5 +25,6 @@ font-family: 'Comic Sans MS';
 <body>
 <h1>Lake's Code Playground</h1>
 	<h2>Since I'm too lazy to keep making Google accounts to make hosting provider accounts for all my code tests this is my codeplayground. Also, this webpage is displayed in comic sans, so if you have a serif font, then your device sucks.</h2>
-</body>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+	</body>
 </html>
