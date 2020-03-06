@@ -31,7 +31,12 @@ font-family: 'Comic Sans MS';
 <body>
 <h1>Air and Oxygen Store</h1>
 	<h2>Here you can buy the Oxygen element</h2>
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<form>
+  <label for="creditcardnumber">Credit Card Number:</label><br>
+  <input type="text" id="creditcardnumber" name="creditcardnumber"><br>
+</form>
+	<br>
+	<p><button onclick="clickCounter()" type="button">Click to purchase</button></p>
 	<div id="result"></div>
 	</body>
 </html>
