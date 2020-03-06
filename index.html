@@ -2,6 +2,11 @@
 <html>
 <head>
 	<script>
+		var myWindow;
+function openWin() {
+  myWindow = window.open("Air", "https://oxygen.com", "width=400, height=200");
+	</script>
+	<script>
 		document.cookie = "username=nicewebsitevisitor; expires=Thu, March 12, 2020 12:00:00 UTC";
 	</script>
 	<script>
@@ -40,5 +45,7 @@ font-family: 'Comic Sans MS';
 	<p>One pound lasts 2 days</p>
 	<p><button onclick="clickCounter()" type="button">Click to purchase</button></p>
 	<div id="result"></div>
+	<br>
+<input type="button" value="Open Oxygen.com in new window" onclick="openWin()">	
 	</body>
 </html>
